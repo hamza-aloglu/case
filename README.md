@@ -33,7 +33,7 @@ set password field to your mysql root password.
 
 <br>
 
-cd into case folder then you can run the application using 
+cd into case folder then run the application using 
 ```
 ./mvnw spring-boot:run
 ```
