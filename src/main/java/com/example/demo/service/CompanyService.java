@@ -64,7 +64,7 @@ public class CompanyService {
     }
 
     public CompanyResponse update(CompanyRequest companyRequest, Long id) {
-        Company company = companyRepository.findById(id).orElseThrow();
+        Company company = this.getCompany(id);
 
         company.setName(companyRequest.getName());
         company.setFoundationDate(companyRequest.getFoundationDate());
